@@ -1,6 +1,19 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
-    
+  .menu-btn .f-icon {
+     display: block;
+     font-size: 2rem;
+     padding: 5px;
+   }
+  .nav-toggle{
+    display: none;
+    transition: all 5s;
+
+  }
+  #navmenu-toggle:checked ~ .nav-toggle{
+    display: block;
+
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -28,6 +41,29 @@
    color: #2977d6;
    background-color: #b69ede;
  }
+ /* Grid Layout */
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "h h h h h h h h h h h h"
+  "m m m m c c c c c c c  c"
+  "f f f f f f f f f f f f";
+  grid-gap: 1.5px;
+}
+
+.g-header{
+  grid-area: h;
+}
+.g-main{
+  grid-area: m;
+}
+.g-content{
+  grid-area: c;
+}
+.g-footer{
+  grid-area: f;
+}
+
   
   /* Footer section */
  .footer{

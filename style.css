@@ -35,6 +35,15 @@ p{
 }
 /* Ends common codes */
 
+/* Menu Btn and checkbox hidden */
+#navmenu-toggle {
+  display: none;
+}
+
+.menu-btn .f-icon {
+  display: none;
+}
+
 /* Header starts */
 .header{
 
@@ -56,7 +65,8 @@ p{
   color: seagreen;
 }
 .navbar_menu{
-  
+      transition: all 0.3s;
+
 }
 .navbar_menu a{
   
@@ -73,33 +83,28 @@ p{
 }
 /* Ends header */
 
-/* Grid Layout */
+/* Grid layout using flexbox */
+p .grid-up{
+  visibility: hidden;
+}
 .grid-container{
   background-color: #ebe6d8;
-  display: grid;
-  grid-template-areas: 
-  "h h h h h h h h h h h h"
-  "m m m m c c c c c c c  c"
-  "f f f f f f f f f f f f";
-  grid-gap: 1.5px;
+  display: flex;
+  flex-direction: column;
 }
 .grid_item h1, p{
   text-align: center;
 }
 .g-header{
-  grid-area: h;
   background-color: darkviolet;
 }
 .g-main{
-  grid-area: m;
   background-color: green;
 }
 .g-content{
-  grid-area: c;
   background-color: greenyellow;
 }
 .g-footer{
-  grid-area: f;
   background-color: blueviolet;
 }
 
