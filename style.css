@@ -25,6 +25,9 @@ h1,
 p{
   padding: 10px;
 }
+p{
+  text-align: justify;
+}
 .p-m{
     padding: 5px;
     margin: 5px;
@@ -47,8 +50,8 @@ p{
 }
 
 /* Header starts */
-.header{
-
+.header p{
+  text-align: center;
 }
 .header-top{
     text-align: center;
