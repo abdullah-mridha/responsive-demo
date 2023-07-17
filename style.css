@@ -104,6 +104,9 @@ p{
 p .grid-up{
   visibility: hidden;
 }
+.p {
+  background-color: var(--pColor);
+}
 .grid-container{
   background-color: var(--pColor);
   display: flex;
