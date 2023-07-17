@@ -4,6 +4,8 @@
     --margin: 5px;  
     --transition: all 0.3s;
     --transform: scale(1.1);
+    --pColor:#e8e4f2;
+    --sColor:#f0dfec;
 }
 *{
     box-sizing: border-box;
@@ -22,6 +24,9 @@ html{
 h1,
 p{
   padding: 10px;
+}
+p{
+  text-align: justify;
 }
 .p-m{
     padding: 5px;
@@ -45,8 +50,8 @@ p{
 }
 
 /* Header starts */
-.header{
-
+.header p{
+  text-align: center;
 }
 .header-top{
     text-align: center;
@@ -68,9 +73,7 @@ p{
       transition: all 0.3s;
 
 }
-.navbar_menu a{
-  
-}
+
 
 .nav_link{
     background-color: beige;
@@ -83,12 +86,27 @@ p{
 }
 /* Ends header */
 
+/* Article section */
+.article{
+  background-color: var(--pColor);
+}
+
+/* Skills section */
+.skills{
+  background-color: var(--pColor);
+}
+.skills h1 {
+  text-align: center;
+}
 /* Grid layout using flexbox */
 p .grid-up{
   visibility: hidden;
 }
+.p {
+  background-color: var(--pColor);
+}
 .grid-container{
-  background-color: #ebe6d8;
+  background-color: var(--pColor);
   display: flex;
   flex-direction: column;
 }
