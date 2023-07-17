@@ -92,8 +92,11 @@ p .grid-up{
   display: flex;
   flex-direction: column;
 }
-.grid_item h1, p{
+.grid_item h1{
   text-align: center;
+}
+.grid_item p{
+  text-align: justify;
 }
 .g-header{
   background-color: darkviolet;
